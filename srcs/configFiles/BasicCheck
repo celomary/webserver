@@ -1,9 +1,7 @@
 server {
     listen 0.0.0.0 8080;
-
     root ${PATH};
     http_method GET;
-
     location / {
         autoindex on;
     }

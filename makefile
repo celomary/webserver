@@ -1,6 +1,5 @@
 NAME = webserv
 CC = clang++
-CFLAGS = -Wall -Wextra -Werror 
 SRC = srcs/webServer.cpp\
 	  srcs/HttpServer/*.cpp\
 	  srcs/FileParser/*.cpp\
@@ -14,7 +13,7 @@ SRC = srcs/webServer.cpp\
 	  srcs/Cgi/*.cpp
 all : $(NAME)
 $(NAME): $(SRC)
-	@$(CC) $(CFLAGS) $(SRC) -o $(NAME)
+	@$(CC)  $(SRC) -o $(NAME)
 clean:
 	@rm -rf *.o
 
